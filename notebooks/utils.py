@@ -1,9 +1,9 @@
-__all__ = ['show_image', 'subplots', 'get_grid', 'show_images', 'init_ddpm', 'load_image', 'image_grid', 'plot_scheduler',
+__all__ = ['show_image', 'subplots', 'get_grid', 'show_images', 'init_ddpm', 'load_image', 'image_grid',
+           'plot_scheduler',
            'plot_noise_and_denoise', 'spectrogram_from_image', 'waveform_from_spectrogram',
            'wav_bytes_from_spectrogram_image', 'measure_latency_and_memory_use']
 
-
- import gc
+import gc
 import math
 import typing
 from io import BytesIO
@@ -22,7 +22,6 @@ from scipy.io import wavfile
 from torch.nn import init
 from torchvision.utils import make_grid
 from transformers import set_seed
-
 
 
 @fc.delegates(plt.Axes.imshow)
@@ -50,12 +49,12 @@ def show_image(im, ax=None, figsize=None, title=None, noframe=True, **kwargs):
 
 @fc.delegates(plt.subplots, keep=True)
 def subplots(
-    nrows: int = 1,  # Number of rows in returned axes grid
-    ncols: int = 1,  # Number of columns in returned axes grid
-    figsize: tuple = None,  # Width, height in inches of the returned figure
-    imsize: int = 3,  # Size (in inches) of images that will be displayed in the returned figure
-    suptitle: str = None,  # Title to be set to returned figure
-    **kwargs,
+        nrows: int = 1,  # Number of rows in returned axes grid
+        ncols: int = 1,  # Number of columns in returned axes grid
+        figsize: tuple = None,  # Width, height in inches of the returned figure
+        imsize: int = 3,  # Size (in inches) of images that will be displayed in the returned figure
+        suptitle: str = None,  # Title to be set to returned figure
+        **kwargs,
 ):  # fig and axs
     "A figure and set of subplots to display images of `imsize` inches"
     if figsize is None:
@@ -70,13 +69,13 @@ def subplots(
 
 @fc.delegates(subplots)
 def get_grid(
-    n: int,  # Number of axes
-    nrows: int = None,  # Number of rows, defaulting to `int(math.sqrt(n))`
-    ncols: int = None,  # Number of columns, defaulting to `ceil(n/rows)`
-    title: str = None,  # If passed, title set to the figure
-    weight: str = "bold",  # Title font weight
-    size: int = 14,  # Title font size
-    **kwargs,
+        n: int,  # Number of axes
+        nrows: int = None,  # Number of rows, defaulting to `int(math.sqrt(n))`
+        ncols: int = None,  # Number of columns, defaulting to `ceil(n/rows)`
+        title: str = None,  # If passed, title set to the figure
+        weight: str = "bold",  # Title font weight
+        size: int = 14,  # Title font size
+        **kwargs,
 ):  # fig and axs
     "Return a grid of `n` axes, `rows` by `cols`"
     if nrows:
@@ -96,20 +95,21 @@ def get_grid(
 
 @fc.delegates(subplots)
 def show_images(
-    ims: list,  # Images to show
-    nrows: typing.Union[int, None] = None,  # Number of rows in grid
-    ncols: typing.Union[
-        int, None
-    ] = None,  # Number of columns in grid (auto-calculated if None)
-    titles: typing.Union[
-        list, None
-    ] = None,  # Optional list of titles for each image
-    **kwargs,
+        ims: list,  # Images to show
+        nrows: typing.Union[int, None] = None,  # Number of rows in grid
+        ncols: typing.Union[
+            int, None
+        ] = None,  # Number of columns in grid (auto-calculated if None)
+        titles: typing.Union[
+            list, None
+        ] = None,  # Optional list of titles for each image
+        **kwargs,
 ):
     "Show all images `ims` as subplots with `rows` using `titles`"
     axs = get_grid(len(ims), nrows, ncols, **kwargs)[1].flat
     for im, t, ax in zip_longest(ims, titles or [], axs):
         show_image(im, ax=ax, title=t)
+
 
 def init_ddpm(model):
     for o in model.down_blocks:
@@ -123,6 +123,7 @@ def init_ddpm(model):
             p.conv2.weight.data.zero_()
 
     model.conv_out.weight.data.zero_()
+
 
 def load_image(url, size=None, return_tensor=False):
     if url.startswith("http"):
@@ -145,36 +146,22 @@ def image_grid(imgs, rows, cols):
     return grid
 
 
-
 def plot_scheduler(scheduler, ax=None, plot_both=True, label=None):
     if ax is None:
         fig, (ax) = plt.subplots(1, 1)
     # Check if SimpleScheduler
     if not hasattr(scheduler, "alphas_cumprod"):
-        ax.plot(
-            torch.linspace(1, 0, scheduler.num_train_timesteps),
-            label=r"
- equivalent",
-        )
-        if plot_both:
-            ax.plot(
-                torch.linspace(0, 1, scheduler.num_train_timesteps),
-                label=r"
- equivalent",
-            )
+        ax.plot(torch.linspace(1, 0, scheduler.num_train_timesteps), label=r"equivalent", )
+        if plot_both: ax.plot(torch.linspace(0, 1, scheduler.num_train_timesteps), label=r"equivalent", )
         ax.legend()
         return
     if label == None:
-        label = r"
-"
-    ax.plot(scheduler.alphas_cumprod.cpu() ** 0.5, label=label)
-    if plot_both:
-        ax.plot(
-            (1 - scheduler.alphas_cumprod.cpu()) ** 0.5,
-            label=r"
-",
-        )
-    ax.legend(fontsize="x-large");
+        label = r""
+        ax.plot(scheduler.alphas_cumprod.cpu() ** 0.5, label=label)
+    if plot_both: ax.plot((1 - scheduler.alphas_cumprod.cpu()) ** 0.5,
+                          label=r"", )
+    ax.legend(fontsize="x-large")
+
 
 def plot_noise_and_denoise(scheduler_output, step):
     _, axs = plt.subplots(1, 2, figsize=(12, 5))
@@ -191,6 +178,8 @@ def plot_noise_and_denoise(scheduler_output, step):
     axs[1].set_title(f"Predicted denoised images (step {step})")
     plt.axis("off")
     plt.show()
+
+
 """
 Simplified from riffusion codebase.
 """
@@ -216,16 +205,16 @@ def spectrogram_from_image(image, max_volume, power_for_image) -> np.ndarray:
 
 
 def waveform_from_spectrogram(
-    Sxx: np.ndarray,
-    n_fft: int,
-    hop_length: int,
-    win_length: int,
-    num_samples: int,
-    sample_rate: int,
-    n_mels: int,
-    max_mel_iters: int,
-    num_griffin_lim_iters: int,
-    device: str = "cpu",
+        Sxx: np.ndarray,
+        n_fft: int,
+        hop_length: int,
+        win_length: int,
+        num_samples: int,
+        sample_rate: int,
+        n_mels: int,
+        max_mel_iters: int,
+        num_griffin_lim_iters: int,
+        device: str = "cpu",
 ) -> np.ndarray:
     """
     Reconstruct a waveform from a spectrogram.
@@ -284,8 +273,8 @@ def wav_bytes_from_spectrogram_image(image, device="cpu"):
 
     # Derived parameters
     num_samples = (
-        int(image.width / float(bins_per_image) * clip_duration_ms)
-        * sample_rate
+            int(image.width / float(bins_per_image) * clip_duration_ms)
+            * sample_rate
     )
     n_fft = int(padded_duration_ms / 1000.0 * sample_rate)
     hop_length = int(step_size_ms / 1000.0 * sample_rate)
@@ -312,7 +301,7 @@ def wav_bytes_from_spectrogram_image(image, device="cpu"):
 
 
 def measure_latency_and_memory_use(
-    pipeline, inputs, model_name, device, nb_loops=50
+        pipeline, inputs, model_name, device, nb_loops=50
 ):
     # Define Events that measure start and end of the generate pass
     start_event = torch.cuda.Event(enable_timing=True)
@@ -340,5 +329,5 @@ def measure_latency_and_memory_use(
     max_memory = torch.cuda.max_memory_allocated(device)
     elapsed_time = start_event.elapsed_time(end_event) * 1.0e-3
 
-    print(f"{model_name} execution time: {elapsed_time/nb_loops } seconds")
-    print(f"{model_name} max memory footprint: { max_memory*1e-9 } GB")
+    print(f"{model_name} execution time: {elapsed_time / nb_loops} seconds")
+    print(f"{model_name} max memory footprint: {max_memory * 1e-9} GB")

@@ -12,15 +12,20 @@ from itertools import zip_longest
 import fastcore.all as fc
 import numpy as np
 import requests
-import torch
 import torchaudio
 import torchvision.transforms.functional as TF
 from matplotlib import pyplot as plt
-from PIL import Image
 from scipy.io import wavfile
 from torch.nn import init
 from torchvision.utils import make_grid
 from transformers import set_seed
+
+import torch
+import torchvision
+from PIL import Image
+from datasets import load_dataset
+from diffusers import DDPMScheduler, UNet2DModel
+from torchvision.transforms import transforms
 
 
 @fc.delegates(plt.Axes.imshow)
@@ -330,3 +335,66 @@ def measure_latency_and_memory_use(
 
     print(f"{model_name} execution time: {elapsed_time / nb_loops} seconds")
     print(f"{model_name} max memory footprint: {max_memory * 1e-9} GB")
+
+
+access_token = "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"  # Your access token of Huggingface
+
+
+def access():
+    return access_token
+
+
+def load_custom_dataset(name):
+    return load_dataset("huggan/" + name, split="train",
+                        token=access_token)
+
+
+def transform(examples):
+    image_size = 64
+
+    # Define data augmentations
+    preprocess = transforms.Compose(
+        [
+            transforms.Resize((image_size, image_size)),  # Resize
+            transforms.RandomHorizontalFlip(),  # Randomly flip (data augmentation)
+            transforms.ToTensor(),  # Convert to tensor (0, 1)
+            transforms.Normalize([0.5], [0.5]),  # Map to (-1, 1)
+        ]
+    )
+    images = [preprocess(image.convert("RGB")) for image in examples["image"]]
+    return {"images": images}
+
+
+def train_dataloader(dataset):
+    batch_size = 32
+    dataset.set_transform(transform)
+    train_data_loader = torch.utils.data.DataLoader(
+        dataset, batch_size=batch_size, shuffle=True
+    )
+    return train_data_loader
+
+
+def scheduler():
+    return DDPMScheduler(num_train_timesteps=1000, beta_start=0.001, beta_end=0.02)
+
+
+def unet_model():
+    return UNet2DModel(
+        in_channels=3,  # 3 channels for RGB images
+        sample_size=64,  # Specify our input size
+        block_out_channels=(64, 128, 256, 512),  # N channels per layer
+        down_block_types=("DownBlock2D", "DownBlock2D",
+                          "AttnDownBlock2D", "AttnDownBlock2D"),
+        up_block_types=("AttnUpBlock2D", "AttnUpBlock2D",
+                        "UpBlock2D", "UpBlock2D"),
+    )
+
+
+def device():
+    return torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
+def corrupt(x, noise, amount):
+    amount = amount.view(-1, 1, 1, 1)  # make sure it's broadcastable
+
+    return x * (1 - amount) + noise * amount

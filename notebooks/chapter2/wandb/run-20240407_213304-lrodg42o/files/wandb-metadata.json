@@ -1,0 +1,129 @@
+{
+    "os": "Linux-6.5.0-14-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-07T16:33:08.695409",
+    "startedAt": "2024-04-07T16:33:04.746700",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py",
+    "codePathLocal": "fine_tuning.py",
+    "codePath": "fine_tuning.py",
+    "host": "neo",
+    "username": "sajjad",
+    "executable": "/home/sajjad/PycharmProjects/my/.venv/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3082.9571875,
+        "min": 400.0,
+        "max": 4768.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2427.454,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 3000.343,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2850.789,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 4668.627,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2799.335,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2085.763,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2132.528,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2893.653,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 4615.361,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 4613.567,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 2054.545,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 3370.752,
+            "min": 400.0,
+            "max": 4768.0
+        },
+        {
+            "current": 3216.982,
+            "min": 400.0,
+            "max": 4768.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 937.3305015563965,
+            "used": 839.3968353271484
+        }
+    },
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "id": "0x1681",
+            "unique_id": "N/A",
+            "vbios_version": "113-REMBRANDT-X37",
+            "performance_level": "auto",
+            "gpu_overdrive": "0",
+            "gpu_memory_overdrive": "0",
+            "series": "Rembrandt [Radeon 680M]",
+            "model": "0x50b6",
+            "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+            "sku": "REMBRANDT"
+        }
+    ],
+    "memory": {
+        "total": 23.22829818725586
+    }
+}

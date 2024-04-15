@@ -1,0 +1,83 @@
+model_index.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 167/167 [00:00<00:00, 956kB/s]
+diffusion_pytorch_model.safetensors not found
+config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 790/790 [00:00<00:00, 2.66MB/s]
+scheduler_config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 256/256 [00:00<00:00, 1.28MB/s]
+diffusion_pytorch_model.bin:   0%|                                                                                                                                             | 0.00/455M [00:00<?, ?B/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fetching 4 files: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [04:32<00:00, 68.02s/it]
+Loading pipeline components...: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  2.98it/s]
+/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/diffusers/configuration_utils.py:244: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a scheduler, please use <class 'diffusers.schedulers.scheduling_ddim.DDIMScheduler'>.from_pretrained(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+Downloading readme: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.37k/2.37k [00:00<00:00, 14.5MB/s]
+
+Resolving data files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 72/72 [00:02<00:00, 26.63it/s]
+Downloading metadata: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5.91k/5.91k [00:00<00:00, 26.2MB/s]
+Traceback (most recent call last):
+  File "/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py", line 14, in <module>
+    def train(
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/fastcore/script.py", line 125, in call_parse
+    return _f()
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/fastcore/script.py", line 119, in _f
+    return tfunc(**merge(args, args_from_prog(func, xtra)))
+  File "/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py", line 39, in train
+    dataset = load_dataset(dataset_name, split="train")
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/datasets/load.py", line 2582, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/datasets/builder.py", line 945, in download_and_prepare
+    raise OSError(
+OSError: Not enough disk space. Needed: 66.20 GiB (download: 31.42 GiB, generated: 34.79 GiB, post-processed: Unknown size)
+Traceback (most recent call last):
+  File "/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py", line 14, in <module>
+    def train(
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/fastcore/script.py", line 125, in call_parse
+    return _f()
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/fastcore/script.py", line 119, in _f
+    return tfunc(**merge(args, args_from_prog(func, xtra)))
+  File "/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py", line 39, in train
+    dataset = load_dataset(dataset_name, split="train")
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/datasets/load.py", line 2582, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/datasets/builder.py", line 945, in download_and_prepare
+    raise OSError(
+OSError: Not enough disk space. Needed: 66.20 GiB (download: 31.42 GiB, generated: 34.79 GiB, post-processed: Unknown size)

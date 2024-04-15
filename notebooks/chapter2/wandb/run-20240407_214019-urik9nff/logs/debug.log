@@ -1,0 +1,36 @@
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Configure stats pid to 17019
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Loading settings from /home/sajjad/.config/wandb/settings
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Loading settings from /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/settings
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'fine_tuning.py', 'program_abspath': '/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py', 'program': '/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py'}
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:_log_setup():521] Logging user logs to /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_214019-urik9nff/logs/debug.log
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:_log_setup():522] Logging internal logs to /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_214019-urik9nff/logs/debug-internal.log
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:init():561] calling init triggers
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'image_size': 256, 'batch_size': 16, 'grad_accumulation_steps': 2, 'num_epochs': 1, 'start_model': 'google/ddpm-bedroom-256', 'dataset_name': 'huggan/wikiart', 'device': 'cuda', 'model_save_name': 'sajjad_1e', 'wandb_project': 'dm_finetune', 'log_samples_every': 250, 'save_model_every': 2500}
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:init():611] starting backend
+2024-04-07 21:40:19,168 INFO    MainThread:17019 [wandb_init.py:init():615] setting up manager
+2024-04-07 21:40:19,169 INFO    MainThread:17019 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-07 21:40:19,170 INFO    MainThread:17019 [wandb_init.py:init():623] backend started and connected
+2024-04-07 21:40:19,171 INFO    MainThread:17019 [wandb_init.py:init():715] updated telemetry
+2024-04-07 21:40:19,172 INFO    MainThread:17019 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-07 21:40:21,326 WARNING MainThread:17019 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/sajjad/PycharmProjects/my/.venv/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/usr/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

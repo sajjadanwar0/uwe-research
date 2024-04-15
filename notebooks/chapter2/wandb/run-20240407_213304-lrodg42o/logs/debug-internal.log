@@ -1,0 +1,827 @@
+2024-04-07 21:33:04,751 INFO    StreamThr :14955 [internal.py:wandb_internal():86] W&B internal server running at pid: 14955, started at: 2024-04-07 21:33:04.750559
+2024-04-07 21:33:04,753 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status
+2024-04-07 21:33:04,754 INFO    WriterThread:14955 [datastore.py:open_for_write():87] open: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/run-lrodg42o.wandb
+2024-04-07 21:33:04,755 DEBUG   SenderThread:14955 [sender.py:send():379] send: header
+2024-04-07 21:33:04,755 DEBUG   SenderThread:14955 [sender.py:send():379] send: run
+2024-04-07 21:33:06,931 INFO    SenderThread:14955 [dir_watcher.py:__init__():211] watching files in: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files
+2024-04-07 21:33:06,931 INFO    SenderThread:14955 [sender.py:_start_run_threads():1124] run started: lrodg42o with start time 1712507584.750474
+2024-04-07 21:33:06,935 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: check_version
+2024-04-07 21:33:06,935 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: check_version
+2024-04-07 21:33:08,481 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: run_start
+2024-04-07 21:33:08,585 DEBUG   HandlerThread:14955 [system_info.py:__init__():26] System info init
+2024-04-07 21:33:08,585 DEBUG   HandlerThread:14955 [system_info.py:__init__():41] System info init done
+2024-04-07 21:33:08,585 INFO    HandlerThread:14955 [system_monitor.py:start():194] Starting system monitor
+2024-04-07 21:33:08,586 INFO    SystemMonitor:14955 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-07 21:33:08,586 INFO    HandlerThread:14955 [system_monitor.py:probe():214] Collecting system info
+2024-04-07 21:33:08,587 INFO    SystemMonitor:14955 [interfaces.py:start():190] Started cpu monitoring
+2024-04-07 21:33:08,587 INFO    SystemMonitor:14955 [interfaces.py:start():190] Started disk monitoring
+2024-04-07 21:33:08,589 INFO    SystemMonitor:14955 [interfaces.py:start():190] Started gpuamd monitoring
+2024-04-07 21:33:08,589 INFO    SystemMonitor:14955 [interfaces.py:start():190] Started memory monitoring
+2024-04-07 21:33:08,590 INFO    SystemMonitor:14955 [interfaces.py:start():190] Started network monitoring
+2024-04-07 21:33:08,691 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:08,691 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:08,691 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:08,695 DEBUG   HandlerThread:14955 [system_info.py:probe():150] Probing system
+2024-04-07 21:33:08,697 DEBUG   HandlerThread:14955 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-07 21:33:08,697 DEBUG   HandlerThread:14955 [system_info.py:probe():198] Probing system done
+2024-04-07 21:33:08,697 DEBUG   HandlerThread:14955 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-14-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-07T16:33:08.695409', 'startedAt': '2024-04-07T16:33:04.746700', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/sajjad/PycharmProjects/uwe/notebooks/chapter2/fine_tuning.py', 'codePathLocal': 'fine_tuning.py', 'codePath': 'fine_tuning.py', 'host': 'neo', 'username': 'sajjad', 'executable': '/home/sajjad/PycharmProjects/my/.venv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3082.9571875, 'min': 400.0, 'max': 4768.0}, 'cpu_freq_per_core': [{'current': 2427.454, 'min': 400.0, 'max': 4768.0}, {'current': 3000.343, 'min': 400.0, 'max': 4768.0}, {'current': 2850.789, 'min': 400.0, 'max': 4768.0}, {'current': 4668.627, 'min': 400.0, 'max': 4768.0}, {'current': 2799.335, 'min': 400.0, 'max': 4768.0}, {'current': 400.0, 'min': 400.0, 'max': 4768.0}, {'current': 400.0, 'min': 400.0, 'max': 4768.0}, {'current': 2085.763, 'min': 400.0, 'max': 4768.0}, {'current': 2132.528, 'min': 400.0, 'max': 4768.0}, {'current': 2893.653, 'min': 400.0, 'max': 4768.0}, {'current': 4615.361, 'min': 400.0, 'max': 4768.0}, {'current': 4613.567, 'min': 400.0, 'max': 4768.0}, {'current': 2054.545, 'min': 400.0, 'max': 4768.0}, {'current': 400.0, 'min': 400.0, 'max': 4768.0}, {'current': 3370.752, 'min': 400.0, 'max': 4768.0}, {'current': 3216.982, 'min': 400.0, 'max': 4768.0}], 'disk': {'/': {'total': 937.3305015563965, 'used': 839.3968353271484}}, 'gpu_count': 1, 'gpu_devices': [{'id': '0x1681', 'unique_id': 'N/A', 'vbios_version': '113-REMBRANDT-X37', 'performance_level': 'auto', 'gpu_overdrive': '0', 'gpu_memory_overdrive': '0', 'series': 'Rembrandt [Radeon 680M]', 'model': '0x50b6', 'vendor': 'Advanced Micro Devices, Inc. [AMD/ATI]', 'sku': 'REMBRANDT'}], 'memory': {'total': 23.22829818725586}}
+2024-04-07 21:33:08,697 INFO    HandlerThread:14955 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-07 21:33:08,697 INFO    HandlerThread:14955 [system_monitor.py:probe():227] Publishing system info
+2024-04-07 21:33:08,697 INFO    HandlerThread:14955 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-07 21:33:08,704 DEBUG   SenderThread:14955 [sender.py:send():379] send: files
+2024-04-07 21:33:08,704 INFO    SenderThread:14955 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-07 21:33:08,844 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-07 21:33:08,845 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: python_packages
+2024-04-07 21:33:08,845 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:33:08,846 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:33:08,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:33:08,933 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/requirements.txt
+2024-04-07 21:33:08,934 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/wandb-metadata.json
+2024-04-07 21:33:10,378 DEBUG   SenderThread:14955 [sender.py:send():379] send: telemetry
+2024-04-07 21:33:10,379 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:10,787 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:10,787 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:10,787 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:12,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:12,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:12,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:14,985 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:14,985 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:14,985 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:15,382 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:17,082 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:17,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:17,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:17,936 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:19,183 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:19,183 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:19,183 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:19,737 INFO    wandb-upload_0:14955 [upload_job.py:push():131] Uploaded file /tmp/tmp37lfi8e0wandb/hoepas5g-wandb-metadata.json
+2024-04-07 21:33:19,937 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:20,819 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:21,279 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:21,279 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:21,279 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:21,938 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:23,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:23,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:23,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:23,845 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:33:23,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:33:23,846 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:33:23,939 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:25,496 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:25,496 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:25,496 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:25,896 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:27,595 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:27,595 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:27,595 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:29,782 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:29,783 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:29,783 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:30,897 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:31,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:31,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:31,887 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:33,987 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:33,987 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:33,987 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:36,086 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:36,086 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:36,086 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:36,796 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:37,946 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/config.yaml
+2024-04-07 21:33:37,946 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:38,187 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:38,188 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:38,188 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:38,845 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:33:38,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:33:38,846 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:33:40,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:40,291 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:40,291 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:42,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:42,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:42,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:43,437 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:44,495 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:44,495 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:44,495 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:45,948 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:46,598 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:46,598 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:46,598 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:48,703 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:48,703 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:48,703 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:49,038 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:50,815 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:50,815 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:50,815 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:52,919 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:52,919 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:52,919 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:53,845 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:33:53,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:33:53,846 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:33:54,539 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:33:55,022 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:55,022 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:55,022 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:55,953 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:33:57,128 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:57,129 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:57,129 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:33:59,237 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:33:59,237 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:33:59,237 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:00,009 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:01,343 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:01,343 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:01,343 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:03,449 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:03,449 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:03,449 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:05,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:05,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:05,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:05,823 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:05,957 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:34:07,660 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:07,660 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:07,660 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:08,590 DEBUG   SystemMonitor:14955 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-07 21:34:08,592 DEBUG   SenderThread:14955 [sender.py:send():379] send: telemetry
+2024-04-07 21:34:08,592 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:34:08,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:34:08,846 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:34:08,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:34:09,772 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:09,772 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:09,772 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:11,358 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:11,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:11,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:11,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:12,960 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/config.yaml
+2024-04-07 21:34:13,978 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:13,978 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:13,978 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:16,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:16,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:16,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:17,222 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:17,962 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:34:18,185 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:18,185 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:18,185 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:20,289 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:20,289 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:20,289 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:22,223 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:22,393 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:22,393 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:22,393 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:23,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:34:23,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:34:23,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:34:24,498 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:24,498 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:24,498 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:26,602 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:26,602 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:26,602 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:27,416 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:28,705 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:28,705 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:28,705 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:29,967 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:34:30,822 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:30,823 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:30,823 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:32,942 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:32,959 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:32,960 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:32,960 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:35,064 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:35,064 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:35,064 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:37,167 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:37,167 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:37,168 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:37,944 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:38,593 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:34:38,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:34:38,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:34:38,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:34:39,269 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:39,269 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:39,269 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:41,374 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:41,375 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:41,375 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:41,971 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:34:43,450 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:43,479 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:43,479 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:43,479 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:45,585 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:45,586 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:45,586 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:47,688 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:47,688 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:47,688 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:48,451 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:49,793 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:49,794 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:49,794 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:51,899 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:51,900 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:51,900 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:53,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:34:53,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:34:53,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:34:53,975 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:34:54,003 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:54,003 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:54,003 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:54,495 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:34:56,109 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:56,109 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:56,109 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:58,212 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:34:58,212 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:34:58,212 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:34:59,496 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:00,315 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:00,315 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:00,315 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:02,418 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:02,418 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:02,418 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:04,497 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:04,523 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:04,523 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:04,523 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:05,980 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:35:06,629 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:06,630 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:06,630 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:08,594 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:35:08,732 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:08,733 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:08,733 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:08,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:35:08,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:35:08,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:35:10,286 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:10,839 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:10,839 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:10,839 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:12,945 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:12,945 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:12,946 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:15,050 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:15,050 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:15,050 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:15,288 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:17,153 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:17,153 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:17,153 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:17,985 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:35:19,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:19,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:19,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:20,651 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:21,356 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:21,356 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:21,356 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:23,460 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:23,461 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:23,461 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:23,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:35:23,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:35:23,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:35:25,565 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:25,565 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:25,565 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:25,657 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:27,671 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:27,671 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:27,671 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:27,988 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:35:29,775 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:29,776 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:29,776 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:30,659 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:31,878 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:31,878 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:31,878 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:33,983 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:33,983 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:33,983 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:35,659 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:36,091 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:36,091 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:36,091 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:38,198 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:38,198 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:38,198 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:38,594 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:35:38,846 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:35:38,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:35:38,847 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:35:39,993 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:35:40,302 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:40,302 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:40,302 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:40,926 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:42,407 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:42,408 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:42,408 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:44,516 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:44,516 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:44,516 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:45,927 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:46,619 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:46,620 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:46,620 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:48,723 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:48,723 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:48,723 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:49,997 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:35:50,836 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:50,836 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:50,836 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:51,690 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:52,940 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:52,940 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:52,940 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:53,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:35:53,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:35:53,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:35:55,047 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:55,047 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:55,047 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:57,146 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:57,147 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:57,147 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:35:57,538 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:35:59,248 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:35:59,248 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:35:59,248 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:00,001 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:01,351 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:01,351 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:01,351 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:03,343 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:03,457 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:03,457 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:03,457 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:05,565 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:05,566 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:05,566 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:07,667 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:07,667 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:07,667 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:08,344 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:08,595 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:36:08,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:36:08,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:36:08,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:36:09,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:09,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:09,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:10,004 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:11,866 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:11,866 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:11,866 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:13,376 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:13,964 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:13,964 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:13,964 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:16,067 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:16,068 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:16,068 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:18,174 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:18,174 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:18,174 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:18,377 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:20,008 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:20,278 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:20,279 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:20,279 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:22,379 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:22,379 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:22,379 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:23,537 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:23,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:36:23,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:36:23,849 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:36:24,487 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:24,487 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:24,487 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:26,591 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:26,591 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:26,591 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:28,011 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:28,689 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:28,697 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:28,697 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:28,697 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:30,802 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:30,802 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:30,803 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:32,013 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:32,908 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:32,908 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:32,908 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:34,013 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:34,235 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:35,019 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:35,019 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:35,019 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:37,124 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:37,125 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:37,125 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:38,015 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:38,596 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:36:38,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:36:38,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:36:38,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:36:39,226 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:39,226 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:39,227 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:39,416 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:41,328 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:41,328 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:41,328 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:42,016 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:43,428 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:43,428 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:43,428 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:44,017 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:45,035 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:45,536 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:45,536 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:45,536 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:47,634 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:47,634 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:47,634 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:48,019 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:49,737 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:49,737 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:49,737 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:50,020 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:50,147 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:51,842 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:51,842 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:51,842 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:53,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:36:53,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:36:53,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:36:53,944 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:53,944 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:53,944 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:54,022 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:55,153 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:36:56,024 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:36:56,046 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:56,046 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:56,047 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:36:58,147 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:36:58,147 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:36:58,147 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:00,025 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:00,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:00,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:00,255 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:00,588 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:02,363 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:02,363 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:02,363 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:04,027 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:04,473 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:04,473 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:04,473 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:05,859 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:06,581 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:06,581 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:06,581 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:07,028 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:08,597 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:37:08,685 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:08,685 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:08,685 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:08,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:37:08,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:37:08,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:37:10,802 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:10,802 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:10,802 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:11,030 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:11,356 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:12,909 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:12,909 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:12,909 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:15,018 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:15,018 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:15,018 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:15,032 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:16,993 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:17,033 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:17,121 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:17,122 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:17,122 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:19,230 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:19,230 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:19,230 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:21,035 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:21,338 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:21,338 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:21,338 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:22,347 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:23,444 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:23,444 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:23,444 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:23,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:37:23,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:37:23,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:37:25,037 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:25,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:25,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:25,555 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:27,037 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:27,661 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:27,661 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:27,661 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:28,036 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:29,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:29,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:29,766 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:31,039 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:31,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:31,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:31,875 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:33,039 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:33,761 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:33,979 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:33,979 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:33,979 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:36,082 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:36,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:36,083 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:37,041 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:38,187 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:38,188 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:38,188 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:38,597 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:37:38,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:37:38,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:37:38,849 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:37:39,367 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:40,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:40,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:40,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:41,043 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:42,397 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:42,397 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:42,397 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:43,044 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:44,501 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:44,502 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:44,502 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:44,867 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:46,603 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:46,604 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:46,604 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:47,045 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:48,708 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:48,708 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:48,708 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:49,046 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:50,818 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:50,821 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:50,821 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:50,821 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:52,924 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:52,925 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:52,925 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:53,048 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:53,847 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:37:53,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:37:53,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:37:55,028 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:55,028 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:55,028 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:55,049 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:37:56,541 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:37:57,128 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:57,128 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:57,128 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:37:59,234 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:37:59,234 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:37:59,234 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:01,337 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:01,337 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:01,337 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:01,542 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:03,448 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:03,448 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:03,448 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:05,554 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:05,554 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:05,554 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:06,543 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:07,657 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:07,657 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:07,657 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:08,599 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:38:08,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:38:08,848 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:38:08,889 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:38:09,758 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:09,759 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:09,759 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:11,861 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:11,861 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:11,861 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:12,732 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:13,965 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:13,965 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:13,965 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:16,075 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:16,076 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:16,076 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:17,734 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:18,178 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:18,178 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:18,178 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:20,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:20,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:20,290 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:21,060 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:38:22,391 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:22,391 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:22,392 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:23,710 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:23,848 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-07 21:38:23,849 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:38:23,849 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: stop_status
+2024-04-07 21:38:25,008 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:25,008 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:25,008 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:27,063 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:38:27,121 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:27,121 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:27,121 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:29,004 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:29,064 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:38:29,223 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:29,224 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:29,224 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:31,330 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():73] Could not parse GPU memory allocation as float
+2024-04-07 21:38:31,330 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():77] Could not parse GPU temperature as float
+2024-04-07 21:38:31,330 WARNING gpuamd    :14955 [gpu_amd.py:parse_stats():91] Could not parse GPU average/max power as float
+2024-04-07 21:38:31,458 DEBUG   SenderThread:14955 [sender.py:send():379] send: exit
+2024-04-07 21:38:31,458 INFO    SenderThread:14955 [sender.py:send_exit():586] handling exit code: 1
+2024-04-07 21:38:31,458 INFO    SenderThread:14955 [sender.py:send_exit():588] handling runtime: 322
+2024-04-07 21:38:31,459 INFO    SenderThread:14955 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-07 21:38:31,459 INFO    SenderThread:14955 [sender.py:send_exit():594] send defer
+2024-04-07 21:38:31,459 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,459 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-07 21:38:31,460 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,460 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-07 21:38:31,460 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 1
+2024-04-07 21:38:31,460 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,460 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-07 21:38:31,460 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,460 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-07 21:38:31,460 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 2
+2024-04-07 21:38:31,460 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,460 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-07 21:38:31,460 INFO    HandlerThread:14955 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-07 21:38:31,461 INFO    HandlerThread:14955 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-07 21:38:31,461 INFO    HandlerThread:14955 [interfaces.py:finish():202] Joined disk monitor
+2024-04-07 21:38:31,461 INFO    HandlerThread:14955 [interfaces.py:finish():202] Joined gpuamd monitor
+2024-04-07 21:38:31,461 INFO    HandlerThread:14955 [interfaces.py:finish():202] Joined memory monitor
+2024-04-07 21:38:31,461 INFO    HandlerThread:14955 [interfaces.py:finish():202] Joined network monitor
+2024-04-07 21:38:31,461 DEBUG   SystemMonitor:14955 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-07 21:38:31,461 DEBUG   SystemMonitor:14955 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-07 21:38:31,462 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,462 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-07 21:38:31,462 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 3
+2024-04-07 21:38:31,462 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,462 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-07 21:38:31,462 DEBUG   SenderThread:14955 [sender.py:send():379] send: stats
+2024-04-07 21:38:31,462 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,462 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-07 21:38:31,462 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 4
+2024-04-07 21:38:31,462 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,462 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-07 21:38:31,463 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,463 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-07 21:38:31,463 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 5
+2024-04-07 21:38:31,463 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,463 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-07 21:38:31,463 DEBUG   SenderThread:14955 [sender.py:send():379] send: summary
+2024-04-07 21:38:31,463 INFO    SenderThread:14955 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-07 21:38:31,463 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,463 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-07 21:38:31,463 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 6
+2024-04-07 21:38:31,463 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,463 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-07 21:38:31,464 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,464 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-07 21:38:31,464 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 7
+2024-04-07 21:38:31,464 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: status_report
+2024-04-07 21:38:31,464 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:31,464 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-07 21:38:31,464 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:31,464 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-07 21:38:32,065 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/wandb-summary.json
+2024-04-07 21:38:32,145 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 8
+2024-04-07 21:38:32,145 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:32,145 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-07 21:38:32,145 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:32,145 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-07 21:38:32,145 INFO    SenderThread:14955 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-07 21:38:32,145 INFO    SenderThread:14955 [job_builder.py:_get_source_type():466] no source found
+2024-04-07 21:38:32,146 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 9
+2024-04-07 21:38:32,146 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:32,146 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-07 21:38:32,146 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:32,146 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-07 21:38:32,146 INFO    SenderThread:14955 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-07 21:38:32,458 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:33,065 INFO    Thread-12 :14955 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:38:33,066 INFO    SenderThread:14955 [dir_watcher.py:finish():388] scan: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files
+2024-04-07 21:38:33,066 INFO    SenderThread:14955 [dir_watcher.py:finish():402] scan save: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/wandb-metadata.json wandb-metadata.json
+2024-04-07 21:38:33,066 INFO    SenderThread:14955 [dir_watcher.py:finish():402] scan save: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/requirements.txt requirements.txt
+2024-04-07 21:38:33,067 INFO    SenderThread:14955 [dir_watcher.py:finish():402] scan save: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/config.yaml config.yaml
+2024-04-07 21:38:33,068 INFO    SenderThread:14955 [dir_watcher.py:finish():402] scan save: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log output.log
+2024-04-07 21:38:33,071 INFO    SenderThread:14955 [dir_watcher.py:finish():402] scan save: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/wandb-summary.json wandb-summary.json
+2024-04-07 21:38:33,071 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 10
+2024-04-07 21:38:33,071 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:33,072 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:33,073 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-07 21:38:33,075 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:33,075 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-07 21:38:33,075 INFO    SenderThread:14955 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-07 21:38:33,459 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:33,459 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:34,460 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:34,460 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:35,069 INFO    wandb-upload_0:14955 [upload_job.py:push():131] Uploaded file /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/requirements.txt
+2024-04-07 21:38:35,297 INFO    wandb-upload_3:14955 [upload_job.py:push():131] Uploaded file /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/wandb-summary.json
+2024-04-07 21:38:35,461 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:35,461 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:35,714 INFO    wandb-upload_2:14955 [upload_job.py:push():131] Uploaded file /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/output.log
+2024-04-07 21:38:35,726 INFO    wandb-upload_1:14955 [upload_job.py:push():131] Uploaded file /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/files/config.yaml
+2024-04-07 21:38:35,927 INFO    Thread-11 (_thread_body):14955 [sender.py:transition_state():614] send defer: 11
+2024-04-07 21:38:35,928 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:35,928 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-07 21:38:35,928 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:35,928 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-07 21:38:35,928 INFO    SenderThread:14955 [file_pusher.py:join():178] waiting for file pusher
+2024-04-07 21:38:35,929 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 12
+2024-04-07 21:38:35,929 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:35,929 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-07 21:38:35,929 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:35,929 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-07 21:38:35,929 INFO    SenderThread:14955 [file_stream.py:finish():614] file stream finish called
+2024-04-07 21:38:36,462 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:36,590 INFO    SenderThread:14955 [file_stream.py:finish():618] file stream finish is done
+2024-04-07 21:38:36,591 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 13
+2024-04-07 21:38:36,591 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:36,591 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:36,591 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-07 21:38:36,591 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:36,592 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-07 21:38:36,592 INFO    SenderThread:14955 [sender.py:transition_state():614] send defer: 14
+2024-04-07 21:38:36,592 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: defer
+2024-04-07 21:38:36,592 INFO    HandlerThread:14955 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-07 21:38:36,592 DEBUG   SenderThread:14955 [sender.py:send():379] send: final
+2024-04-07 21:38:36,592 DEBUG   SenderThread:14955 [sender.py:send():379] send: footer
+2024-04-07 21:38:36,592 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: defer
+2024-04-07 21:38:36,592 INFO    SenderThread:14955 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-07 21:38:36,593 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:36,593 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-07 21:38:36,593 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: server_info
+2024-04-07 21:38:36,593 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:36,593 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: poll_exit
+2024-04-07 21:38:36,593 DEBUG   SenderThread:14955 [sender.py:send_request():406] send_request: server_info
+2024-04-07 21:38:36,595 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-07 21:38:36,595 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-07 21:38:36,595 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-07 21:38:38,515 INFO    MainThread:14955 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-07 21:38:38,515 INFO    MainThread:14955 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-07 21:38:38,515 INFO    MainThread:14955 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-07 21:38:38,515 DEBUG   HandlerThread:14955 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-07 21:38:38,515 INFO    HandlerThread:14955 [handler.py:finish():866] shutting down handler
+2024-04-07 21:38:38,594 INFO    WriterThread:14955 [datastore.py:close():296] close: /home/sajjad/PycharmProjects/uwe/notebooks/chapter2/wandb/run-20240407_213304-lrodg42o/run-lrodg42o.wandb
+2024-04-07 21:38:39,515 INFO    SenderThread:14955 [sender.py:finish():1546] shutting down sender
+2024-04-07 21:38:39,515 INFO    SenderThread:14955 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-07 21:38:39,515 INFO    SenderThread:14955 [file_pusher.py:join():178] waiting for file pusher

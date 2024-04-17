@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86870355-1af6-4e0a-9e94-a563699e0f99" name="Changes" comment="" />
+    <list default="true" id="86870355-1af6-4e0a-9e94-a563699e0f99" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter1/noise_schedule.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/input_for_img2img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/input_mask_for_img2img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/low_res_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/low_res_flowers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/up_scaled_flowers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/upscaled_cat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter1/03_diffusers_from_scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter1/03_diffusers_from_scratch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter1/04_butterflies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter1/04_butterflies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/01_01_conditional_classification.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_01_conditional_classification.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/01_finetuning_and_guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_finetuning_and_guidance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/02_02_class_conditioning.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/02_class_conditioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_02_class_conditioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/01_01_intro_to_stable_diffusion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/01_01_intro_to_stable_diffusion.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/02_img2img.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/02_img2img.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/03_in_painting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/03_in_painting.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/putting_components_in_action.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/putting_components_in_action.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/updscaling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/updscaling.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +38,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/stable-diffusion-webui/embeddings/negative" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sajjadanwar0&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:sajjadanwar0/uwe-research.git&quot;,
+    &quot;accountId&quot;: &quot;5836adf3-c251-4623-a93d-40174d248073&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///usr/local/lib/python3.10/site-packages/pip/_internal/cli/base_command.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///usr/local/lib/python3.10/site-packages/pip/_internal/commands/install.py" root0="FORCE_HIGHLIGHTING" />
@@ -42,22 +81,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/sajjad/PycharmProjects/uwe/notebooks/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sajjad/PycharmProjects/uwe/notebooks/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/notebooks/images" />
@@ -114,6 +155,12 @@
       <workItem from="1712888162482" duration="10891000" />
       <workItem from="1712931398011" duration="5138000" />
       <workItem from="1712979746147" duration="6606000" />
+      <workItem from="1713238683121" duration="1920000" />
+      <workItem from="1713241470321" duration="290000" />
+      <workItem from="1713242196546" duration="44000" />
+      <workItem from="1713242275306" duration="137000" />
+      <workItem from="1713242513338" duration="17486000" />
+      <workItem from="1713327194899" duration="5116000" />
     </task>
     <servers />
   </component>

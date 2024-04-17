@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86870355-1af6-4e0a-9e94-a563699e0f99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter1/noise_schedule.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/input_for_img2img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/input_mask_for_img2img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/low_res_cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/low_res_flowers.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/up_scaled_flowers.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/chapter3/upscaled_cat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter1/03_diffusers_from_scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter1/03_diffusers_from_scratch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter1/04_butterflies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter1/04_butterflies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/01_01_conditional_classification.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_01_conditional_classification.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/01_finetuning_and_guidance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_finetuning_and_guidance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/02_02_class_conditioning.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter2/02_class_conditioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter2/01_02_class_conditioning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/01_01_intro_to_stable_diffusion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/01_01_intro_to_stable_diffusion.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/02_img2img.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/02_img2img.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/03_in_painting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/03_in_painting.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/putting_components_in_action.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/putting_components_in_action.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/chapter3/updscaling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/chapter3/updscaling.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="86870355-1af6-4e0a-9e94-a563699e0f99" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +140,7 @@
       <workItem from="1713242196546" duration="44000" />
       <workItem from="1713242275306" duration="137000" />
       <workItem from="1713242513338" duration="17486000" />
-      <workItem from="1713327194899" duration="5116000" />
+      <workItem from="1713327194899" duration="5745000" />
     </task>
     <servers />
   </component>

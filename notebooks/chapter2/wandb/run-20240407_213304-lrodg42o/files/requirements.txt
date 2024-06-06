@@ -249,7 +249,7 @@ torchdiffeq==0.2.3
 torchmetrics==1.3.2
 torchsde==0.2.6
 torchvision==0.17.1+rocm5.7
-tornado==6.4
+tornado==6.4.1
 tqdm==4.66.2
 traitlets==5.14.1
 trampoline==0.1.2

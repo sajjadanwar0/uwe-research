@@ -39,7 +39,7 @@ blis==0.7.11
 brotlipy==0.7.0
 cachetools==5.3.3
 catalogue==2.0.10
-certifi==2022.6.15
+certifi==2024.7.4
 cffi==1.16.0
 charset-normalizer==3.3.2
 clean-fid==0.1.35
